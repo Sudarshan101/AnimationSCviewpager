@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="true"
+    android:clipToPadding="true"
+    tools:context=".WelcomeActivity">
+
+    <com.dev.sacot41.scviewpager.SCViewPager
+        android:id="@+id/viewpager_main_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.dev.sacot41.scviewpager.SCViewPager>
+
+    <com.dev.sacot41.scviewpager.DotsView
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/dotsview_main"
+        />
+
+    <ImageView
+        android:id="@+id/imageview_main_activity_name_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="40dp"
+        android:paddingRight="50dp"
+        android:layout_alignParentTop="true"
+        android:rotation="-10"
+        android:src="@drawable/name_tag"/>
+
+    <ImageView
+        android:id="@+id/imageview_main_activity_currently_work"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="225dp"
+        android:src="@drawable/currently_work"/>
+
+    <ImageView
+        android:id="@+id/imageview_main_activity_at_skex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:src="@drawable/at_skex_2"/>
+
+    <ImageView
+        android:id="@+id/imageview_main_activity_commonly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/commonly"/>
+
+    <ImageView
+        android:id="@+id/imageview_main_activity_django_python"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="400dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/django_python"/>
+
+    <ImageView
+        android:id="@+id/imageview_main_activity_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/mobile"/>
+
+    <ImageView
+        android:id="@+id/imageview_main_activity_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/but"/>
+
+    <ImageView
+        android:id="@+id/imageview_main_activity_diploma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/diploma"/>
+
+    <ImageView
+        android:id="@+id/imageview_main_activity_why"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/why"/>
+
+    <ImageView
+        android:id="@+id/imageview_main_future"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/future"/>
+
+    <ImageView
+        android:id="@+id/imageview_main_arduino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageview_main_future"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:src="@drawable/arduino"/>
+
+    <ImageView
+        android:id="@+id/imageview_main_raspberry_pi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageview_main_arduino"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:src="@drawable/raspberry_pi_logo"/>
+
+    <ImageView
+        android:id="@+id/imageview_main_connected_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="75dp"
+        android:layout_marginLeft="50dp"
+        android:src="@drawable/connect_device"/>
+
+    <ImageView
+        android:id="@+id/imageview_main_check_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/check_out"/>
+
+
+    <ImageView
+        android:id="@+id/textview_main_github_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/android"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="@color/theme_700"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:layout_below="@id/imageview_main_check_out"/>
+
+
+    <Button
+        android:id="@+id/textview_main_linkedin_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Get started..."
+        android:layout_margin="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_below="@id/textview_main_github_link"
+        android:textStyle="bold"
+        android:background="@color/colorPrimaryDark"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="@color/white"/>
+
+    <!--<Button-->
+        <!--android:text="Get Start.."-->
+        <!--android:textStyle="bold"-->
+        <!--android:textSize="16dp"-->
+        <!--android:background="#66FF0000"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAlignment="viewEnd"-->
+        <!--android:paddingRight="20dp"-->
+        <!--android:alpha="0.3"-->
+        <!--android:textColor="#000"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--tools:ignore="RtlCompat" />-->
+
+</RelativeLayout>
